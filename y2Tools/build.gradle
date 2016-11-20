@@ -32,13 +32,7 @@ android {
 
     getApplicationVariants().all { variant ->
         variant.outputs.each { output ->
-            def time
-            if (!variant.buildType.name.equalsIgnoreCase("debug")) {
-                time = "." + getTime()
-            } else {
-                time = ""
-            }
-            appName = "Y2Tools-${variant?.productFlavors[0]?.name}-${variant.buildType.name}-${variant.versionName}.apk"
+            def appName = "Y2Tools-${variant?.productFlavors[0]?.name}-${variant.buildType.name}-${variant.versionName}.apk"
             output.outputFile = new File(output.outputFile.parent, appName)
         }
     }
