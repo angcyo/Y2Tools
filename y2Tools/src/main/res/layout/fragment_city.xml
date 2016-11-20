@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/little_pad" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/little_margin"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_province"
+                    style="@style/style_city_text_simple"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/str_province_tip" />
+
+                <TextView
+                    style="@style/style_city_text_simple"
+                    android:layout_width="wrap_content"
+                    android:text="@string/str_province_short" />
+
+                <TextView
+                    style="@style/style_city_text_simple"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/str_province_capital" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner_province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_selector"
+                android:popupBackground="@color/transparency_col"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/little_margin"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_city"
+                    style="@style/style_city_text_simple"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/str_city_tip" />
+
+                <TextView
+                    style="@style/style_city_text_simple"
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/str_city_zone" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_selector"
+                android:popupBackground="@color/transparency_col"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/little_margin"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_district"
+                    style="@style/style_city_text_simple"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/str_district_tip" />
+
+                <TextView
+                    style="@style/style_city_text_simple"
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/str_district_zip" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner_district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_selector"
+                android:popupBackground="@color/transparency_col"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/little_margin"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/style_city_text_simple"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/str_car_mark" />
+
+                <TextView
+                    style="@style/style_city_text_simple"
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/str_car_district" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/list_car_mark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

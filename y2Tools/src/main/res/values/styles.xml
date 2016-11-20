@@ -1,0 +1,94 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/window_bg</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="ExitDlg" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="dlg_win">
+        <item name="android:windowFrame">@null</item>
+        <!-- 缁樺埗妗嗘灦鐨勫洓杈� -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 鏄惁鏈夋爣棰� -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 鏄惁娴姩鍦ㄧ獥鍙ｄ腑蹇� -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 缁撳悎android:windowBackground涓�璧蜂娇鐢� -->
+        <item name="android:windowBackground">@null</item>
+        <!-- 绐楀彛鐨勮儗鏅� -->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <!--  -->
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoDisplay">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 鏄惁绂佺敤闃村奖 -->
+    </style>
+
+    <style name="style_radiobutton">
+        <item name="android:layout_width">@dimen/head_ico_width</item>
+        <item name="android:layout_height">@dimen/head_ico_height</item>
+        <item name="android:layout_marginLeft">@dimen/radio_left_margin</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="style_city_text_simple">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@color/text_col</item>
+    </style>
+
+    <style name="style_car_text_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/car_title_height</item>
+        <item name="android:background">@drawable/bt_welcome_selector</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/head_title_col</item>
+        <item name="android:textSize">@dimen/car_title_text_size</item>
+    </style>
+
+    <style name="style_car_grid_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:horizontalSpacing">@dimen/car_grid_horizontal_spacing</item>
+        <item name="android:numColumns">5</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:verticalSpacing">@dimen/car_grid_vertical_spacing</item>
+    </style>
+
+    <style name="style_baselayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_layout" parent="style_baselayout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/transparency_col_2</item>
+        <item name="android:layout_marginTop">@dimen/middle_margin</item>
+    </style>
+
+    <style name="style_about_text">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_col</item>
+        <item name="android:textSize">@dimen/text_middle_size</item>
+    </style>
+
+    <style name="popup_anim">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+
+</resources>

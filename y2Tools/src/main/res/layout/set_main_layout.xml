@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparency_col" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/little_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置启动页欢迎语:"
+            android:textColor="#9000ff00"
+            android:textSize="@dimen/text_big_size" />
+
+        <EditText
+            android:id="@+id/et_wel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_setting_ok"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/middle_margin"
+        android:background="@drawable/bt_welcome_selector"
+        android:singleLine="true"
+        android:text="OK"
+        android:textColor="#AEAEAE" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <com.angcyo.ui.SecretTextView
+            android:id="@+id/text_about1"
+            style="@style/style_about_text" />
+
+        <com.angcyo.ui.SecretTextView
+            android:id="@+id/text_about2"
+            style="@style/style_about_text" />
+
+        <com.angcyo.ui.SecretTextView
+            android:id="@+id/text_about3"
+            style="@style/style_about_text" />
+
+        <com.angcyo.ui.SecretTextView
+            android:id="@+id/text_about4"
+            style="@style/style_about_text" />
+
+        <com.angcyo.ui.SecretTextView
+            android:id="@+id/text_about5"
+            style="@style/style_about_text" />
+
+        <com.angcyo.ui.SecretTextView
+            android:id="@+id/text_about6"
+            style="@style/style_about_text" />
+
+        <com.angcyo.ui.SecretTextView
+            android:id="@+id/text_about_ver"
+            style="@style/style_about_text"
+            android:layout_marginTop="@dimen/big_margin"
+            android:textSize="@dimen/text_big_size" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="国庆期间,谢谢Lulc的陪伴,谢谢!  国庆就这样过去了...忘不了你们的点滴,忘不了!...留此APP留恋~"
+        android:textColor="@color/transparency_col_2"
+        android:textSize="6sp" />
+
+</RelativeLayout>

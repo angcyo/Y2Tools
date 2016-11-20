@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_col">#05F1D6</color>
+    <color name="head_title_col">#F0F0F0</color>
+    <color name="head_title2_col">#D9D9D9</color>
+    <color name="text_col">#F0F0F0</color>
+    <color name="transparency_col">#80000000</color>
+    <color name="transparency_col_2">#60000000</color>
+    <color name="transparency_col_3">#30000000</color>
+    <color name="transparency_col_4">#10000000</color>
+    <color name="transparency_all">#00000000</color>
+    <color name="transparency_press_col">#95000000</color>
+
+</resources>

@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tab_text_padd">2dp</dimen>
+    <dimen name="tab_text_margin">2dp</dimen>
+    <dimen name="tab_text_size">20sp</dimen>
+    <dimen name="head_ico_size">20dp</dimen>
+    <dimen name="head_ico_width">20dp</dimen>
+    <dimen name="head_ico_height">20dp</dimen>
+    <dimen name="head_title_height">120dp</dimen>
+    <dimen name="head_title_text_size">20sp</dimen>
+    <dimen name="head_title2_text_size">12sp</dimen>
+    <dimen name="radio_left_margin">10dp</dimen>
+    <dimen name="tip_text_size">14dp</dimen>
+    <dimen name="text_size">14dp</dimen>
+    <dimen name="text_middle_size">20sp</dimen>
+    <dimen name="text_little_size">14sp</dimen>
+    <dimen name="text_big_size">30sp</dimen>
+    <dimen name="text_big_size_plus">40sp</dimen>
+    <dimen name="exit_text_img_width">40dp</dimen>
+    <dimen name="exit_text_img_height">5dp</dimen>
+    <dimen name="little_margin">5dp</dimen>
+    <dimen name="little2_margin">2dp</dimen>
+    <dimen name="middle_margin">10dp</dimen>
+    <dimen name="big_margin">20dp</dimen>
+    <dimen name="little_pad">5dp</dimen>
+    <dimen name="little2_pad">2dp</dimen>
+    <dimen name="middle_pad">10dp</dimen>
+    <dimen name="big_pad">20dp</dimen>
+    <dimen name="car_title_height">18dp</dimen>
+    <dimen name="car_title_text_size">12sp</dimen>
+    <dimen name="car_item_text_size">10sp</dimen>
+    <dimen name="car_grid_vertical_spacing">3dp</dimen>
+    <dimen name="car_grid_horizontal_spacing">3dp</dimen>
+    <dimen name="car_grid_item_img_width">60dp</dimen>
+    <dimen name="car_grid_item_img_height">60dp</dimen>
+    <dimen name="ads_widget_height">300dp</dimen>
+    <dimen name="ads_banner_height">60dp</dimen>
+
+</resources>

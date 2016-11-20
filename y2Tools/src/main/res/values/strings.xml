@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">省份简称车标查询</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置首页的欢迎语</string>
+    <string name="str_city_tip">城市名称</string>
+    <string name="str_city_zone">城市区号</string>
+    <string name="str_province_tip">省份全称</string>
+    <string name="str_province_short">省份简称</string>
+    <string name="str_province_capital">省份省会</string>
+    <string name="str_district_tip">区域称号</string>
+    <string name="str_district_zip">区域编码</string>
+    <string name="dlg_exit_text">再按一次退出...</string>
+    <string name="str_car_district">地区</string>
+    <string name="str_car_mark">牌号</string>
+    <string name="str_city_title1">省份简称查询</string>
+    <string name="str_city_title2">"本页面提供省份简称,区号,邮政编码,汽车车牌归属地查询.\n数据来源:http://www.ip138.com\n不排除数据错误,出现错误可以反馈给我修改."</string>
+    <string name="str_car_title1">汽车图标</string>
+    <string name="str_car_title2">"收集了大部分车标信息,包括了客车大卡车,数据来自网络.\n默认显示比较常见的车标,可以通过下面的开关显示全部.\n希望对大家有用!!!数据来自:baidu.com"</string>
+    <string name="str_about_title1">关于APP</string>
+    <string name="str_about_title2">"作者:Y2    联系方式:angcyo@126.com\n本作品是作者的处女作,不喜勿喷,请大家多多支持.我只是一个小小的码农,作品无法做到完美.有什么建议,BUG可以通过这个邮箱联系我."</string>
+    <string name="str_location">正在定位...</string>
+    <string name="str_location_fail">定位失败,点击重试.</string>
+    <string name="str_location_tip">点击可以复制位置信息到剪切板哦!</string>
+    <string name="str_about_support">→ 点击支持作者 ←</string>
+    <string name="str_location_fail_tip">只采用网络定位,请检查网络是否正常.</string>
+    <string name="str_car_zg">中国</string>
+    <string name="str_car_hg">韩国</string>
+    <string name="str_car_dg">德国</string>
+    <string name="str_car_fg">法国</string>
+    <string name="str_car_mg">美国</string>
+    <string name="str_car_qt">其它</string>
+    <string name="str_car_rb">日本</string>
+    <string name="str_car_rd">瑞典</string>
+    <string name="str_car_ydl">意大利</string>
+    <string name="str_car_yg">英国</string>
+    <string name="str_load_tip">稍等...</string>
+    <string name="str_switch_show_text">点击显示所有</string>
+    <string name="str_switch_show_all">已经显示所有</string>
+    <string name="str_switch_show_common">最常见车标展</string>
+    <string name="str_about_text1">看窗外男欢女爱</string>
+    <string name="str_about_text2">瞅屋里独自等待</string>
+    <string name="str_about_text3">等我的爱悄悄来</string>
+    <string name="str_about_text4">寻我的那一片海</string>
+    <string name="str_about_text5">观眼前的一排排</string>
+    <string name="str_about_text6">哪个才是属于我的菜</string>
+    <string name="str_netfail">无可用网络...</string>
+    <string name="str_netfail_support">先谢谢您的点击,不过支持作者请先连接网络哦~~~!!!!</string>
+    <string name="str_support_click">3Q ^_^</string>
+
+    <string-array name="str_array_url_isnull">
+        <item>这公司不行,别没得信息可以看.</item>
+        <item>啥也没有哟!</item>
+        <item>恭喜,没有中奖.</item>
+        <item>︿(￣︶￣)︽(￣︶￣)︿飞.飞.飞.</item>
+        <item>还没跟上地球的脚步~</item>
+        <item>真难,找不到百科.</item>
+        <item>又漏了添加了?</item>
+        <item>真的没有办法打开百科.</item>
+        <item>木有地雷...</item>
+        <item>Ta在哪呢? ^_^</item>
+        <item>你该找女朋友,而不是这个 ~.~</item>
+        <item>你今天出门会艳遇哦~ !.!</item>
+        <item>你是个好人哈哈!</item>
+        <item>我还是喜欢你的!</item>
+    </string-array>
+    <string-array name="str_array_tip">
+        <item>数据加载中...</item>
+        <item>数据马上呈现.</item>
+        <item>稍等...</item>
+        <item>车标有点多...!</item>
+        <item>waiting...</item>
+        <item>等我出手~</item>
+        <item>马上就好,就好!!!</item>
+        <item>快了,快乐,...</item>
+        <item>稍等,马上呈现!</item>
+        <item>等待数据~</item>
+        <item>操作ing...</item>
+        <item>崩溃了,QJJ ^_^</item>
+        <item>...还给我,啥子?</item>
+    </string-array>
+
+</resources>
