@@ -1,5 +1,10 @@
 apply plugin: 'com.android.application'
 
+def apkTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+def apk_time = apkTime()
+
 android {
     signingConfigs {
         angcyo {
@@ -9,12 +14,12 @@ android {
             storePassword 'angcyo'
         }
     }
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 27
+    //buildToolsVersion "23.0.3"
     defaultConfig {
         applicationId "com.angcyo.y2tools"
         minSdkVersion 19
-        targetSdkVersion 21
+        targetSdkVersion 28
         versionCode = "5"
         versionName = "1.2016.1120"
     }
@@ -30,16 +35,32 @@ android {
     }
     useLibrary 'org.apache.http.legacy'
 
-    getApplicationVariants().all { variant ->
-        variant.outputs.each { output ->
-            def appName = "Y2Tools-${variant?.productFlavors[0]?.name}-${variant.buildType.name}-${variant.versionName}.apk"
-            output.outputFile = new File(output.outputFile.parent, appName)
+//    getApplicationVariants().all { variant ->
+//        variant.outputs.each { output ->
+//            def appName = "Y2Tools-${variant?.productFlavors[0]?.name}-${variant.buildType.name}-${variant.versionName}.apk"
+//            output.outputFile = new File(output.outputFile.parent, appName)
+//        }
+//    }
+
+    /*Gradle3.0 以上的方法*/
+    applicationVariants.all { variant ->
+        if (variant.buildType.name != "debug") {
+            variant.getPackageApplication().outputDirectory = new File(project.rootDir.absolutePath + "/apk")
+        }
+
+        variant.getPackageApplication().outputScope.apkDatas.forEach { apkData ->
+            apkData.outputFileName = rootProject.name + "-" +
+                    variant.versionName + "_" +
+                    apk_time + "_" +
+                    variant.flavorName + "_" +
+                    variant.buildType.name + "_" +
+                    variant.signingConfig.name +
+                    ".apk"
         }
     }
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:23.+'
-    compile 'com.android.support:support-v4:23.+'
-    compile files('libs/locSDK_4.2.jar')
+    implementation 'com.android.support:appcompat-v7:23.+'
+    implementation files('libs/locSDK_4.2.jar')
 }

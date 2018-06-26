@@ -1,8 +1,10 @@
 package com.angcyo.y2tools;
 
+import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.app.ActivityCompat;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.animation.Animation;
@@ -77,6 +79,8 @@ public class WelcomeActivity extends BaseActivity {
                     getResources().getString(R.string.str_netfail));
         }
 
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
+                Manifest.permission.ACCESS_COARSE_LOCATION}, 110);
     }
 
     @Override
