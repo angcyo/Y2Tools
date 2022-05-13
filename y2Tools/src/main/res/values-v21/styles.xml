@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <item name="android:navigationBarColor">@color/transparency_col_3</item>
+    </style>
+
+</resources>

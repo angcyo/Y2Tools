@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/head_bg"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/head_title_height">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/head_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/head_title_height">
 
     <RelativeLayout
         android:id="@+id/title_rlayout"
@@ -18,7 +19,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center_horizontal"
             android:textColor="@color/head_title_col"
-            android:textSize="@dimen/head_title_text_size"/>
+            android:textSize="@dimen/head_title_text_size" />
 
         <TextView
             android:id="@+id/title2"
@@ -28,14 +29,14 @@
             android:layout_marginLeft="@dimen/middle_margin"
             android:autoLink="all"
             android:textColor="@color/head_title2_col"
-            android:textSize="@dimen/head_title2_text_size"/>
+            android:textSize="@dimen/head_title2_text_size" />
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginRight="@dimen/little_margin"
         android:background="@drawable/tab_text_bg_shape"
         android:orientation="horizontal">
@@ -53,18 +54,21 @@
                 android:layout_height="@dimen/head_ico_height"
                 android:layout_marginLeft="@dimen/radio_left_margin"
                 android:background="@drawable/city_selector"
+                android:backgroundTint="@color/radio_ico_color"
                 android:button="@null"
-                android:checked="true"/>
+                android:checked="true" />
 
             <RadioButton
                 android:id="@+id/radio_car"
                 style="@style/style_radiobutton"
-                android:background="@drawable/car_selector"/>
+                android:background="@drawable/car_selector"
+                android:backgroundTint="@color/radio_ico_color" />
 
             <RadioButton
                 android:id="@+id/radio_about"
                 style="@style/style_radiobutton"
-                android:background="@drawable/about_selector"/>
+                android:background="@drawable/about_selector"
+                android:backgroundTint="@color/radio_ico_color" />
         </RadioGroup>
     </LinearLayout>
 
@@ -72,18 +76,19 @@
         android:id="@+id/layout_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="@dimen/middle_margin"
+        android:layout_alignParentBottom="true"
         android:layout_marginLeft="@dimen/little_margin"
-        android:visibility="gone">
+        android:layout_marginBottom="@dimen/middle_margin"
+        android:visibility="gone"
+        tools:visibility="visible">
 
         <ImageView
             android:id="@+id/img_location"
             android:layout_width="@dimen/head_ico_size"
             android:layout_height="@dimen/head_ico_size"
             android:layout_centerVertical="true"
-            android:src="@drawable/anim_list_location"/>
+            android:src="@drawable/anim_list_location" />
 
         <TextView
             android:id="@+id/text_location"
@@ -97,7 +102,7 @@
             android:singleLine="true"
             android:text="@string/str_location"
             android:textColor="@color/text_col"
-            android:textSize="@dimen/text_little_size"/>
+            android:textSize="@dimen/text_little_size" />
     </RelativeLayout>
 
     <TextView
@@ -110,7 +115,7 @@
         android:text="@string/str_location_tip"
         android:textColor="@color/text_col"
         android:textSize="@dimen/head_title2_text_size"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/img_guang"
@@ -119,7 +124,7 @@
         android:layout_alignParentTop="true"
         android:scaleType="fitXY"
         android:src="@drawable/anim_list_guang"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 
     <com.angcyo.ui.SwitchButton
         android:id="@+id/switch_show_all"
@@ -139,8 +144,7 @@
         app:frameDrawable="@drawable/switch_frame"
         app:sliderDrawable="@drawable/selector_switch_slider"
         app:stateDrawable="@drawable/selector_switch_state"
-        app:stateMaskDrawable="@drawable/switch_state_mask">
-    </com.angcyo.ui.SwitchButton>
+        app:stateMaskDrawable="@drawable/switch_state_mask"></com.angcyo.ui.SwitchButton>
 
     <TextView
         android:id="@+id/text_about_support"
@@ -151,6 +155,6 @@
         android:text="@string/str_about_support"
         android:textColor="@color/text_col"
         android:textSize="@dimen/text_middle_size"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 
 </RelativeLayout>
