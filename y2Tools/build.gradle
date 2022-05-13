@@ -34,6 +34,13 @@ android {
         }
     }
     useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi'
+        }
+    }
 }
 
 apply from: 'https://gitee.com/angcyo/gradle/raw/master/apk.gradle'

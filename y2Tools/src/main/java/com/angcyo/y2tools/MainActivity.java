@@ -525,7 +525,8 @@ public class MainActivity extends BaseFragmentActivity implements
 
         // autoExit();
         if (exit_rlayout.getVisibility() == View.VISIBLE) {
-            System.exit(1);
+            //System.exit(1);
+            finish();
         }
 
         handler.postDelayed(runnable, EXIT_DELAY_TIME);

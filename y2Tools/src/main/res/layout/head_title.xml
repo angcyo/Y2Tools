@@ -52,7 +52,6 @@
                 android:id="@+id/radio_city"
                 android:layout_width="@dimen/head_ico_width"
                 android:layout_height="@dimen/head_ico_height"
-                android:layout_marginLeft="@dimen/radio_left_margin"
                 android:background="@drawable/city_selector"
                 android:backgroundTint="@color/radio_ico_color"
                 android:button="@null"
@@ -112,10 +111,14 @@
         android:layout_marginLeft="@dimen/head_ico_size"
         android:layout_marginTop="50dp"
         android:background="@drawable/location_tip"
+        android:gravity="center"
+        android:paddingHorizontal="10dp"
+        android:paddingBottom="10dp"
         android:text="@string/str_location_tip"
         android:textColor="@color/text_col"
         android:textSize="@dimen/head_title2_text_size"
-        android:visibility="gone" />
+        android:visibility="gone"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/img_guang"
@@ -144,7 +147,8 @@
         app:frameDrawable="@drawable/switch_frame"
         app:sliderDrawable="@drawable/selector_switch_slider"
         app:stateDrawable="@drawable/selector_switch_state"
-        app:stateMaskDrawable="@drawable/switch_state_mask"></com.angcyo.ui.SwitchButton>
+        app:stateMaskDrawable="@drawable/switch_state_mask"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/text_about_support"
