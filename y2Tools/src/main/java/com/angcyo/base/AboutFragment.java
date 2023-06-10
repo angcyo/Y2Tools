@@ -1,13 +1,14 @@
 package com.angcyo.base;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
+
+import androidx.fragment.app.Fragment;
 
 import com.angcyo.ui.SecretTextView;
 import com.angcyo.util.ColorTool;

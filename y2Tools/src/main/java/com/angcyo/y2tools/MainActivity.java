@@ -16,9 +16,6 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.telephony.TelephonyManager;
 import android.telephony.gsm.GsmCellLocation;
 import android.text.method.LinkMovementMethod;
@@ -41,6 +38,9 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
 import com.angcyo.base.AboutFragment;
 import com.angcyo.base.BaseApplication;
@@ -872,7 +872,7 @@ public class MainActivity extends BaseFragmentActivity implements
 
     }
 
-    public class MainOnPageChangeListener implements OnPageChangeListener {
+    public class MainOnPageChangeListener implements ViewPager.OnPageChangeListener {
 
         public MainOnPageChangeListener() {
             // TODO Auto-generated constructor stub

@@ -67,6 +67,20 @@ public class SwitchButton extends CompoundButton {
         init(attrs);
     }
 
+    private static Bitmap getBitmapFromDrawable(Drawable drawable) {
+        if (drawable == null) {
+            return null;
+        }
+
+        if (drawable instanceof DrawableContainer) {
+            return getBitmapFromDrawable(drawable.getCurrent());
+        } else if (drawable instanceof BitmapDrawable) {
+            return ((BitmapDrawable) drawable).getBitmap();
+        } else {
+            return null;
+        }
+    }
+
     /**
      * 鍒濆鍖?
      *
@@ -186,7 +200,7 @@ public class SwitchButton extends CompoundButton {
             Bitmap stateBitmap = getBitmapFromDrawable(stateDrawable);
             if (stateMaskDrawable != null && stateBitmap != null && !stateBitmap.isRecycled()) {
                 // 淇濆瓨骞跺垱寤轰竴涓柊鐨勯?忔槑灞傦紝濡傛灉涓嶈繖鏍峰仛鐨勮瘽锛岀敾鍑烘潵鐨勮儗鏅細鏄粦鐨?
-                int src = canvas.saveLayer(0, 0, getWidth(), getHeight(), paint, Canvas.MATRIX_SAVE_FLAG | Canvas.CLIP_SAVE_FLAG | Canvas.HAS_ALPHA_LAYER_SAVE_FLAG | Canvas.FULL_COLOR_LAYER_SAVE_FLAG | Canvas.CLIP_TO_LAYER_SAVE_FLAG);
+                int src = canvas.saveLayer(0, 0, getWidth(), getHeight(), paint, Canvas.ALL_SAVE_FLAG);
                 // 缁樺埗閬僵灞?
                 stateMaskDrawable.draw(canvas);
                 // 缁樺埗鐘舵?佸浘鐗囨寜骞跺簲鐢ㄩ伄缃╂晥鏋?
@@ -452,20 +466,6 @@ public class SwitchButton extends CompoundButton {
         int addDistance = newSlideX - tempSlideX;
         this.tempSlideX = newSlideX;
         return addDistance;
-    }
-
-    private static Bitmap getBitmapFromDrawable(Drawable drawable) {
-        if (drawable == null) {
-            return null;
-        }
-
-        if (drawable instanceof DrawableContainer) {
-            return getBitmapFromDrawable(drawable.getCurrent());
-        } else if (drawable instanceof BitmapDrawable) {
-            return ((BitmapDrawable) drawable).getBitmap();
-        } else {
-            return null;
-        }
     }
 
     /**
